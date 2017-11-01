@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      List with Headers
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let list of lists">
+
+    <ion-list-header style="font-weight: bold; font-size: 22px; background-color: #cccccc; color: #fafafa;">
+      {{ list.header }}
+    </ion-list-header>
+
+    <ion-item *ngFor="let item of list.list">
+      {{ item.listItem }}
+    </ion-item>
+
+  </ion-list>
+</ion-content>
